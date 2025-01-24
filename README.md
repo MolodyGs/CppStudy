@@ -2,7 +2,7 @@
 
 - Crear archivo `CMakeLists.txt`
 - Crear carpeta `build`
-- Identificar carpeta donde están los archivo `.cpp`
+- Identificar la carpeta donde están los archivo `.cpp`
 
 Estructura de carpetas de referencia:
 
@@ -18,7 +18,7 @@ Estructura de carpetas de referencia:
 ├── CMakeLists.txt # Archivo de configuración de CMake
 ```
 
-Estrucutra de archivo `CMakeLists.txt`
+Estrucutra del archivo `CMakeLists.txt`
 
 ```
 
@@ -40,10 +40,10 @@ add_executable(MiProyecto codes/test.cpp codes/Amber.cpp)
 
 ## Inicialización de CMake
 
-dentro de la carpeta build, ejecutar `cmake -G "MinGW Makefiles" ..` (Si tienes instalador MinGw). Es importante que sea con los puntos al final (..) ya que esto hace que cmake busque al archivo CMakeLists.txt en el directorio superior.
+dentro de la carpeta build, ejecutar `cmake -G "MinGW Makefiles" ..`. Es importante que sea con los puntos al final (..), ya que esto hace que cmake busque al archivo CMakeLists.txt en el directorio superior.
 
-Esto generará un archivo `.exe` dentro de `Build`. En mi caso es `MiProyecto.exe`, ya que este es el nombre definido en el archivo `CMakeLists.txt`.
+Esto generará un archivo `.exe` dentro de `Build`. Para el ejemplo, este archivo es `MiProyecto.exe`, ya que este es el nombre definido en el archivo `CMakeLists.txt` creado anteriormente.
 
 ## Ejecutar Proyecto
 
-con el comando `cmake --build .` es posible ejecutar el proyecto en cuestión.
+Con el comando `cmake --build .` es posible ejecutar el proyecto en cuestión.
