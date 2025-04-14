@@ -8,9 +8,9 @@ project(project)
 set(CMAKE_CXX_STANDARD 11)
 
 # Agrega los directorios de los archivos de cabecera
-include_directories(codes/include)
+include_directories(../codes/include)
 
 # Add executables for the MPM-GEOMECHANICS project
-file(GLOB_RECURSE EXECUTABLES "codes/*.cpp")
+file(GLOB_RECURSE EXECUTABLES "../codes/*.cpp")
 add_executable(project ${EXECUTABLES})
 set_target_properties(project PROPERTIES LINK_FLAGS "-mconsole")
