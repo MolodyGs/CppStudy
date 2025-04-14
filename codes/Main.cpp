@@ -8,13 +8,11 @@ int main() {
   stack->push(2);
   stack->push(3);
 
-  std::cout << stack->top() << std::endl; // Should print 3
+  std::cout << stack->top() << std::endl; 
 
   stack->pop();
   stack->pop();
   stack->pop();
-  stack->pop();
 
-  std::cout << stack->top() << std::endl; // Should print 3
   return 0;
 }
