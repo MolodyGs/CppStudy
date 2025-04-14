@@ -1,25 +1,20 @@
 #include <iostream>
-#include "include/Entity.h"
-#include "include/Amber.h"
+#include "Stack.h"
 
-using namespace std;
+int main() {
+  std::cout << "Hola" << std::endl;
+  Stack* stack = new Stack();
+  stack->push(1);
+  stack->push(2);
+  stack->push(3);
 
-int number{1};
-string cadena{"hola"};
-// array of integers initialization as default
-int arr[10];
-Amber amber;
+  std::cout << stack->top() << std::endl; // Should print 3
 
-int main()
-{
-  amber = Amber();
-  cout << "hola " << number << endl;
-  cout << cadena << endl;
-  for (int i = 0; i < 10; i++)
-  {
-    cout << arr[i] << " ";
-  }
-  // amber.sayhello();
-  amber.attack();
+  stack->pop();
+  stack->pop();
+  stack->pop();
+  stack->pop();
+
+  std::cout << stack->top() << std::endl; // Should print 3
   return 0;
 }
